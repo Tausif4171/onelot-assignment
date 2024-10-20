@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import dollar from "../assets/BusinessGrowth/dollar.svg";
 import noise from "../assets/BusinessGrowth/noise.svg";
+import { Heading } from "./common/Heading";
 
 interface BusinessCardProps {
   imageSrc: string;
@@ -63,9 +64,12 @@ export const BusinessGrowth = () => {
     <div className=" flex justify-center pt-[66px] md:pt-[103px] pb-[67px] px-4 md:px-24 border-t border-[#E5E7EB]">
       <div className="grid md:grid-cols-2 gap-[27px] max-w-[1440px]">
         <div>
-          <h1 className="mb-[19px] md:mb-[41px] font-bold text-2xl md:text-4xl">
-            Everything You Need to Grow Your Business
-          </h1>
+          <div className="mb-[19px] md:mb-[41px]">
+            <Heading
+              text="Everything You Need to Grow Your Business"
+              size="md"
+            />
+          </div>
           <p className="font-light text-sm md:text-lg text-[#6B7280]">
             OneLot is your trusted lending and financing partner, exclusively
             tailored for used car dealerships. We also offer digital tools for

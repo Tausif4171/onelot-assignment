@@ -3,14 +3,18 @@ import { Button } from "./common/Button";
 import hero from "../assets/Home/hero.jpg";
 import trusted from "../assets/Home/trusted.svg";
 import Image from "next/image";
+import { Heading } from "./common/Heading";
 
 export const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center text-center mb-4 md:mb-14">
       <div className=" px-5 lg:px-0 flex flex-col items-center">
-        <h1 className=" font-bold mb-[18px] md:mb-7 text-3xl md:text-5xl max-w-[940px]">
-          Grow your dealership with car loans and digital tools for dealers
-        </h1>
+        <div className="max-w-[940px] mb-[18px] md:mb-7">
+          <Heading
+            text="Grow your dealership with car loans and digital tools for dealers"
+            size="lg"
+          />
+        </div>
 
         <p className=" font-light mb-[26px] text-[#6B7280] text-base md:text-xl max-w-[798px]">
           We enable dealers to buy more cars through our inventory loan
