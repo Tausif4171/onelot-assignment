@@ -2,6 +2,7 @@ import { BusinessGrowth } from "./components/BusinessGrowth";
 import { CarFinancing } from "./components/CarFinancing";
 import { DealerOperations } from "./components/DealerOperations";
 import { FAQs } from "./components/FAQs";
+import { GetStarted } from "./components/GetStarted";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { StayConnected } from "./components/StayConnected";
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <StayConnected />
       <FAQs />
+      <GetStarted />
     </div>
   );
 }

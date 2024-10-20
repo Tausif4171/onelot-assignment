@@ -87,7 +87,7 @@ export const FAQs: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center px-4 lg:px-8 py-20 bg-slate-50">
+    <div className="flex flex-col justify-center items-center px-4 lg:px-8 py-20 mb-20 bg-slate-50">
       <Heading text="Frequently Asked Questions" size="md" />
       <div className="mt-8">
         {faqs.map((faq, index) => (

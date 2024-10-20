@@ -42,7 +42,7 @@ export const Testimonials: React.FC = () => {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       handleNext();
-    }, 200000000);
+    }, 2000);
 
     // Clear interval on component unmount
     return () => {
