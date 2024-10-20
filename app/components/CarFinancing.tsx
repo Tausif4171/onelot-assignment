@@ -9,14 +9,14 @@ import { Button } from "./common/Button";
 export const CarFinancing = () => {
   return (
     <div className="bg-[#F9FAFB]">
-      <div className="flex md:flex-row flex-col-reverse gap-x-20 gap-y-4 max-w-[1440px] py-8 md:py-16 px-4 md:px-0">
+      <div className="flex md:flex-row flex-col-reverse gap-x-20 gap-y-4 max-w-[1440px] py-8 md:py-16 pl-4 md:pl-0 pr-4 md:pr-24">
         <Image
           // className=" w-[214px] h-[175px] md:w-[800px] md:h-[652px]"
-          className=" flex-shrink-0"
+          className=" w-[60%] md:w-[63%] object-cover h-fit"
           alt="carFinancing"
           src={carFinancing}
         />
-        <div className=" ">
+        <div className="md:w-[37%]">
           <div className=" mb-8">
             <Heading text="Car Financing" size="md" />
           </div>

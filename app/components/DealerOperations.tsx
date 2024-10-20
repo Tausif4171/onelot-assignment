@@ -9,8 +9,8 @@ import { Button } from "./common/Button";
 export const DealerOperations = () => {
   return (
     <div className="bg-[#F9FAFB] flex justify-end">
-      <div className="flex flex-col md:flex-row gap-x-20 gap-y-4 max-w-[1440px] py-8 md:py-16 px-4 md:px-0">
-        <div className=" ">
+      <div className="flex flex-col md:flex-row gap-x-20 gap-y-4 max-w-[1440px] py-8 md:py-16 pr-4 md:pr-0 pl-4 md:pl-24">
+        <div className="md:w-[37%]">
           <div className=" mb-8">
             <Heading text="Dealership Management System" size="md" />
           </div>
@@ -62,7 +62,7 @@ managing your cars easier."
         </div>
         <Image
           // className=" w-[214px] h-[175px] md:w-[800px] md:h-[652px]"
-          className=" flex-shrink-0"
+          className=" w-[60%] md:w-[63%] object-cover h-fit"
           alt="carFinancing"
           src={dealerOperations}
         />
