@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./common/Button";
-import logo from "../assets/Header/logo.svg";
-import dropdown from "../assets/Header/dropdown.svg";
+import logo from "../assets/common/logo.svg";
+import dropdown from "../assets/common/dropdown.svg";
 import Image from "next/image";
 
 export const Header = () => {

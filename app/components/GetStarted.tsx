@@ -5,7 +5,7 @@ import { Button } from "./common/Button";
 
 export const GetStarted = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-center mb-20">
+    <div className="flex flex-col justify-center items-center text-center mx-4 md:mx-10 mb-20">
       <div className=" mb-6">
         <Heading text="Get Started Today" size="md" />
       </div>
