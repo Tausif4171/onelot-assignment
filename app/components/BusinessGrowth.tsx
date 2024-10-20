@@ -62,10 +62,10 @@ export const BusinessGrowth = () => {
   ];
 
   return (
-    <div className=" flex justify-center pt-[66px] md:pt-[103px] pb-[67px] px-4 md:px-24 border-t border-[#E5E7EB]">
-      <div className="grid md:grid-cols-2 gap-[27px] max-w-[1440px]">
+    <div className=" flex justify-center pt-[66px] pb-[67px] px-4 md:px-24 border-t border-[#E5E7EB]">
+      <div className="grid md:grid-cols-2 gap-[27px] md:gap-14 max-w-[1440px]">
         <div>
-          <div className="mb-[19px] md:mb-[41px]">
+          <div className="mb-[19px] md:mb-[41px] md:mt-9">
             <Heading
               text="Everything You Need to Grow Your Business"
               size="md"

@@ -12,7 +12,7 @@ export const Description: React.FC<DescriptionProps> = ({
   const getSizeClasses = (size: string) => {
     switch (size) {
       case "xs":
-        return "text-xs";
+        return "text-sm";
       case "sm":
         return "text-base";
       case "md":
