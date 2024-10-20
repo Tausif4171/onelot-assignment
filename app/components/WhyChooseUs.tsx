@@ -19,10 +19,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex flex-col justify-center items-center text-center pt-6 py-11 px-6 border border-[#E5E7EB] rounded-lg">
-    <Image className="mb-3" alt={title} src={image} />
+  <div className="flex flex-col justify-center items-center text-center pt-6 py-11 px-4 border border-[#E5E7EB] rounded-lg">
+    <Image className="mb-3 w-12 h-12" alt={title} src={image} />
     <h3 className="mb-1 font-semibold text-lg">{title}</h3>
-    <Description text={description} size="xs" />
+    <Description text={description} size="sm" />
   </div>
 );
 
@@ -61,7 +61,7 @@ export const WhyChooseUs: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-auto max-w-[1440px] px-4 md:px-20 mb-[33px] md:mb-[97px]">
       <Heading text="Why OneLot?" size="sm" />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-12">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}

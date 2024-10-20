@@ -23,8 +23,8 @@ export const Header = () => {
         </div>
       </div>
       <div className=" hidden md:flex">
-        <Button variant="transparent" text="Login" />
-        <Button text="Get Started" />
+        <Button variant="transparent" text="Log In" />
+        <Button text="Inquire now" />
       </div>
       <Image className=" md:hidden" src={toggle} alt="" />
     </div>

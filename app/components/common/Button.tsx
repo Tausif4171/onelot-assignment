@@ -15,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
         ${
           variant === "transparent"
             ? "text-[#374151] bg-transparent"
-            : "text-white bg-[#3600D1]"
+            : "text-white bg-[#8364a9]"
         }`}
     >
       {text}
