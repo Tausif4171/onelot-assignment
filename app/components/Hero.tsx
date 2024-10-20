@@ -4,6 +4,7 @@ import hero from "../assets/Home/hero.jpg";
 import trusted from "../assets/Home/trusted.svg";
 import Image from "next/image";
 import { Heading } from "./common/Heading";
+import { Description } from "./common/Description";
 
 export const Hero = () => {
   return (
@@ -16,12 +17,15 @@ export const Hero = () => {
           />
         </div>
 
-        <p className=" font-light mb-[26px] text-[#6B7280] text-base md:text-xl max-w-[798px]">
-          We enable dealers to buy more cars through our inventory loan
+        <div className="mb-[26px] max-w-[798px]">
+          <Description
+            text=" We enable dealers to buy more cars through our inventory loan
           solutions and sell cars more efficiently through our Dealership
           Management System with its inventory management, marketing solutions
-          and market insights
-        </p>
+          and market insights"
+            size="lg"
+          />
+        </div>
       </div>
 
       <div className=" mb-5">

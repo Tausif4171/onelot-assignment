@@ -3,6 +3,7 @@ import Image from "next/image";
 import dollar from "../assets/BusinessGrowth/dollar.svg";
 import noise from "../assets/BusinessGrowth/noise.svg";
 import { Heading } from "./common/Heading";
+import { Description } from "./common/Description";
 
 interface BusinessCardProps {
   imageSrc: string;
@@ -70,11 +71,12 @@ export const BusinessGrowth = () => {
               size="md"
             />
           </div>
-          <p className="font-light text-sm md:text-lg text-[#6B7280]">
-            OneLot is your trusted lending and financing partner, exclusively
+          <Description
+            text=" OneLot is your trusted lending and financing partner, exclusively
             tailored for used car dealerships. We also offer digital tools for
-            streamlined operations and growth of your dealership.
-          </p>
+            streamlined operations and growth of your dealership."
+            size="md"
+          />
         </div>
         <div>
           {businessData.map((data, index) => (
