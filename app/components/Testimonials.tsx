@@ -53,7 +53,7 @@ export const Testimonials: React.FC = () => {
   return (
     <div
       id="default-carousel"
-      className="relative w-full px-4 md:px-0 pt-20 pb-32 bg-slate-50"
+      className="relative w-full mb-24 px-4 md:px-0 pt-20 pb-32 bg-slate-50"
     >
       {/* Carousel wrapper */}
       <div className="">
