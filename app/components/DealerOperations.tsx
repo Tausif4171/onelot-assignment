@@ -8,7 +8,7 @@ import { Button } from "./common/Button";
 
 export const DealerOperations = () => {
   return (
-    <div className="bg-[#F9FAFB] flex justify-end">
+    <div className="bg-[#F9FAFB] flex justify-end mb-[33px] md:mb-[97px]">
       <div className="flex flex-col md:flex-row gap-x-20 gap-y-4 max-w-[1440px] py-8 md:py-16 pr-4 md:pr-0 pl-4 md:pl-24">
         <div className="md:w-[37%]">
           <div className=" mb-8">

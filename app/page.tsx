@@ -3,6 +3,7 @@ import { CarFinancing } from "./components/CarFinancing";
 import { DealerOperations } from "./components/DealerOperations";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { WhyChooseUs } from "./components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <BusinessGrowth />
       <CarFinancing />
       <DealerOperations />
+      <WhyChooseUs />
     </div>
   );
 }
