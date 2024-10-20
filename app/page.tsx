@@ -17,7 +17,7 @@ export default function Home() {
       <DealerOperations />
       <WhyChooseUs />
       <Testimonials />
-      {/* <FAQs /> */}
+      <FAQs />
     </div>
   );
 }
