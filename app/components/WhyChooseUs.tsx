@@ -1,30 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import { Heading } from "./common/Heading";
-import { Description } from "./common/Description";
+import { FeatureCard } from "./FeatureCard";
 import trust from "../assets/WhyChooseUs/trust.svg";
 import easy from "../assets/WhyChooseUs/easy.svg";
 import fast from "../assets/WhyChooseUs/fast.svg";
 import flexible from "../assets/WhyChooseUs/flexible.svg";
 import highAmount from "../assets/WhyChooseUs/highAmount.svg";
-
-interface FeatureCardProps {
-  image: string;
-  title: string;
-  description: string;
-}
-
-const FeatureCard: React.FC<FeatureCardProps> = ({
-  image,
-  title,
-  description,
-}) => (
-  <div className="flex flex-col justify-center items-center text-center pt-6 py-11 px-4 border border-[#E5E7EB] rounded-lg">
-    <Image className="mb-3 w-12 h-12" alt={title} src={image} />
-    <h3 className="mb-1 font-semibold text-lg">{title}</h3>
-    <Description text={description} size="sm" />
-  </div>
-);
 
 export const WhyChooseUs: React.FC = () => {
   const features = [

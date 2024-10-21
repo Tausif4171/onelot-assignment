@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 interface ButtonProps {
@@ -5,6 +7,12 @@ interface ButtonProps {
   text: string;
 }
 
+/**
+ * The Button component renders a styled button with different variants.
+ *
+ * @param {ButtonProps} props - The properties for the Button component.
+ * @returns {JSX.Element} The rendered button.
+ */
 export const Button: React.FC<ButtonProps> = ({
   variant = "default",
   text,

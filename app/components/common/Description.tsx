@@ -1,10 +1,18 @@
+"use client";
+
 import React from "react";
 
 interface DescriptionProps {
   text: string;
-  size?: "xs" | "sm" | "md" | "lg"; // Define the possible sizes
+  size?: "xs" | "sm" | "md" | "lg";
 }
 
+/**
+ * The Description component renders a paragraph of text with varying sizes.
+ *
+ * @param {DescriptionProps} props - The properties for the Description component.
+ * @returns {JSX.Element} The rendered description.
+ */
 export const Description: React.FC<DescriptionProps> = ({
   text,
   size = "md",
@@ -19,6 +27,8 @@ export const Description: React.FC<DescriptionProps> = ({
         return "text-sm md:text-lg";
       case "lg":
         return "text-base md:text-xl";
+      default:
+        return "text-base";
     }
   };
 
