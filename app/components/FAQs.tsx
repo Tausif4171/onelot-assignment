@@ -1,103 +1,57 @@
 "use client";
+
 import React, { useState } from "react";
 import { Heading } from "./common/Heading";
-import Image from "next/image";
-import questionMark from "../assets/FAQs/questionMark.svg";
-
-interface AccordionItemProps {
-  question: string;
-  answer: string;
-  index: number;
-  activeIndex: number | null;
-  setActiveIndex: (index: number | null) => void;
-}
-
-const AccordionItem: React.FC<AccordionItemProps> = ({
-  question,
-  answer,
-  index,
-  activeIndex,
-  setActiveIndex,
-}) => {
-  const isOpen = activeIndex === index; // Determine if the current item is open
-
-  const toggleAccordion = () => {
-    setActiveIndex(isOpen ? null : index); // Close if open, else set to current index
-  };
-
-  return (
-    <div>
-      <button
-        type="button"
-        className="flex items-center justify-between w-full py-5 font-medium text-gray-500 border-b border-gray-200 "
-        onClick={toggleAccordion}
-      >
-        <div className="flex gap-x-2 items-center">
-          <Image src={questionMark} alt="questionMark" />
-          <span>{question}</span>
-        </div>
-        <svg
-          className={`w-3 h-3 transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M9 5 5 1 1 5"
-          />
-        </svg>
-      </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-40" : "max-h-0"
-        }`}
-      >
-        <div className="py-5">{answer}</div>
-      </div>
-    </div>
-  );
-};
+import AccordionItem from "./AccordionItem";
 
 export const FAQs: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null); // Track active index
 
   const faqs = [
     {
-      question: "What is Flowbite?",
+      question: "What is OneLot?",
       answer:
-        "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+        "OneLot is a digital auto financier providing short-term loans for used car dealers in the Philippines. Our vision is to empower dealers to expand their inventory, increase sales, and facilitate smoother business operations through tailored financial solutions.",
     },
     {
-      question: "Is there a Figma file available?",
+      question: "What kind of financing does OneLot do?",
       answer:
-        "Flowbite is first conceptualized and designed using the Figma software, so everything you see in the library has a design equivalent in our Figma file.",
+        "OneLot offers collateralized short term loans to used car dealers, allowing them to leverage their inventory for growth. We differ from services such as AsiaLink and Global Dominion, since our financing options are for car dealers themselves, not the customers of car dealers.",
     },
     {
-      question: "What are the differences between Flowbite and Tailwind UI?",
+      question: "How are interest rates determined?",
       answer:
-        "The main difference is that the core components from Flowbite are open-source under the MIT license, whereas Tailwind UI is a paid product.",
+        "OneLot offers monthly interest rates starting at 1.8% which is applied for all your loan applications. OneLot utilizes daily accrual calculations on all loans to ensure our customers only pay the interest for the time the loan is outstanding.",
+    },
+    {
+      question: "Is OneLot a bank?",
+      answer:
+        "No, OneLot is not a traditional bank. We are a dedicated financial institution that understands the unique requirements of used car dealers and offers short-term collateralized lending solutions to address their working capital needs. OneLot Financing Corporation is a duly registered corporate entity and is regulated by the Securities and Exchange Commission (SEC).",
+    },
+    {
+      question: "What is the eligibility criteria for availing a loan?",
+      answer:
+        "Any used car dealer located in Greater Metro Manila operating for more than a year can apply to OneLot.",
+    },
+    {
+      question: "What documents are required for the application process?",
+      answer:
+        "Get started by signing up via our website and prepare your 2 valid IDs. Ready to get started? [Click here](https://www.onelot.ph/app/signup/dealer)",
     },
   ];
 
   return (
     <div className="flex flex-col justify-center items-center px-4 lg:px-8 py-20 mb-20 bg-slate-50">
       <Heading text="Frequently Asked Questions" size="md" />
-      <div className="mt-8">
+      <div className="mt-8 max-w-[740px]">
         {faqs.map((faq, index) => (
           <AccordionItem
             key={index}
             question={faq.question}
             answer={faq.answer}
-            index={index} // Pass index to AccordionItem
-            activeIndex={activeIndex} // Pass active index
-            setActiveIndex={setActiveIndex} // Pass function to set active index
+            index={index}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
           />
         ))}
       </div>
